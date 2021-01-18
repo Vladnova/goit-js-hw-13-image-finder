@@ -1,0 +1,38 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.photo-card {
+  transition: transform 0.25s linear;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.img {
+  margin-bottom: 8px;
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 160px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats-item {
+  display: inherit;
+  margin: 0;
+
+  .material-icons {
+    margin-right: 10px;
+  }
+}
