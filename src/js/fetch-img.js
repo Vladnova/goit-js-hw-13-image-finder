@@ -21,7 +21,7 @@ function getImg() {
         // loadMoreBtn.show();
         // scrollSmooth();
     })
-    .catch(err => Error(err))
+    .catch(Error)
     .finally(() => {
         spinner.hide();
     });
